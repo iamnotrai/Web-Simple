@@ -2,32 +2,47 @@
 html{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222020;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /*susun isian (element, gambar, sejenisnya) jadi horizontal*/
 }
 
 .container {
-    background-color: #222020;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-grow: 1; /*buat isi sisa ruang */
 }
 
 .container-navbar {
     background-color: rgb(0, 110, 255);
     height: 8vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .ul-navbar{
-    height: 8vh;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    margin-left: auto;
 }
 
 .li-navbar{
-    list-style-type: none;
     font-family: sans-serif;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 5px;
     font-weight: 550;
+    white-space: nowarp;
 }
 
 .li-navbar:hover{
@@ -37,51 +52,61 @@ html{
     border-radius: 6px;
 }
 
-.home-navbar{
+.navbar-title{
     color: white;
     text-decoration: none;
-}
-
-.about-navbar{
-    color: white;
-    text-decoration: none;
-}
-
-.sosmed-navbar{
-    color: white;
-    text-decoration: none;
+    display: block;
+    padding: 0;
 }
 
 .konten-1{
     display: flex;
-    height: 400px;
-    width: 100%;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 82vh;
-    font-size: 30px;
-    color: white;
-    font-family: sans-serif;
+    flex-grow: 1;
 }
 
-.a-content{
+.icon-medsos{
+    display: flex; 
+    gap: 40px; 
+    margin-bottom: 50px;
+}
+
+.icon-medsos2{
     display: flex;
-    width: 380px;
-    height: 380px;
+    width: 200px;
+    height: 200px;
     background-color: #181717;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    font-size: 30px;
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    margin-left: 80px;
+    overflow: hidden; /*gambar ga keluar kotak*/
+    transition: .3s ease-in-out ;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
-.img-content{
-    height: 300px;
-    width: 300px;
+.link-medsos{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.ikon-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
 }
 
 .container-footer{
