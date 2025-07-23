@@ -28,6 +28,21 @@ body{
     padding: 0 20px;
 }
 
+.logo-navbar{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo-text{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+}
+
 .ul-navbar{
     display: flex;
     justify-content: flex-end;
