@@ -118,6 +118,12 @@ body{
     transform: translateY(-5px);
 }
 
+.icon-fesnuk{
+    height: 55%;
+    width: 55%;
+    object-fit: contain;
+}
+
 .icon{
     height: 70%;
     width: 70%;
